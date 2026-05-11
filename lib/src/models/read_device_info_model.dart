@@ -1,0 +1,44 @@
+import 'dart:convert';
+import 'package:equatable/equatable.dart';
+import 'app_info_model.dart';
+import 'device_info_model.dart';
+
+/// Unified model containing both app and device information.
+class ReadDeviceInfoModel extends Equatable {
+  final AppInfoModel app;
+  final DeviceInfoModel device;
+
+  const ReadDeviceInfoModel({
+    required this.app,
+    required this.device,
+  });
+
+  Map<String, dynamic> toMap() {
+    return {
+      'app': app.toMap(),
+      'device': device.toMap(),
+    };
+  }
+
+  factory ReadDeviceInfoModel.fromMap(Map<String, dynamic> map) {
+    return ReadDeviceInfoModel(
+      app: AppInfoModel.fromMap(map['app']),
+      device: DeviceInfoModel.fromMap(map['device']),
+    );
+  }
+
+  String toJson() => json.encode(toMap());
+
+  @override
+  List<Object?> get props => [app, device];
+
+  ReadDeviceInfoModel copyWith({
+    AppInfoModel? app,
+    DeviceInfoModel? device,
+  }) {
+    return ReadDeviceInfoModel(
+      app: app ?? this.app,
+      device: device ?? this.device,
+    );
+  }
+}
