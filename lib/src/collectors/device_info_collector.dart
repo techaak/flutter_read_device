@@ -50,7 +50,7 @@ class DeviceInfoCollector {
       board: 'Apple Board',
       bootloader: 'N/A',
       fingerprint: 'N/A',
-      supportedAbis: [],
+      supportedAbis: const [],
       sdkInt: 0, // Not applicable for iOS in same way
       osVersion: iosInfo.systemVersion,
       isPhysicalDevice: iosInfo.isPhysicalDevice,

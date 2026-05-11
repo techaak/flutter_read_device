@@ -165,7 +165,7 @@ class HomePage extends StatelessWidget {
   Widget _buildInfoCard(List<Widget> children) {
     return Card(
       elevation: 0,
-      color: Colors.deepPurple.withOpacity(0.05),
+      color: Colors.deepPurple.withValues(alpha: 0.05),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
