@@ -1,7 +1,7 @@
 name: flutter_read_device
 description: "A production-ready Flutter service layer that merges device_info_plus and package_info_plus into a single clean SDK-style API."
 version: 1.0.0
-homepage:
+homepage: https://github.com/techaak/flutter_read_device.git
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
