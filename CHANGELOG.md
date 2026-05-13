@@ -1,3 +1,10 @@
+## 1.0.1
+
+* Updated package dependencies to latest stable versions.
+* Improved compatibility with latest Flutter and Dart SDK versions.
+* Fixed analyzer warnings and lint issues.
+* Cleaned up unnecessary library declarations.
+
 ## 1.0.0
 
 * Initial release of `flutter_read_device`.

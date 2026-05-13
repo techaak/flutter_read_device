@@ -1,6 +1,6 @@
 name: flutter_read_device
 description: A production-ready Flutter SDK that combines device_info_plus and package_info_plus into a unified device and app information API.
-version: 1.0.0
+version: 1.0.1
 
 homepage: https://github.com/techaak/flutter_read_device
 repository: https://github.com/techaak/flutter_read_device
@@ -21,14 +21,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-  device_info_plus: ^10.1.0
-  package_info_plus: ^8.0.0
-  equatable: ^2.0.5
+  device_info_plus: ^13.1.0
+  package_info_plus: ^10.1.0
+  equatable: ^2.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^6.0.0
 
 flutter:

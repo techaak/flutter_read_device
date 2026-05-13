@@ -1,6 +1,3 @@
-/// A unified SDK for accessing application and device information.
-library flutter_read_device;
-
 import 'src/services/flutter_read_device_service.dart';
 import 'src/models/flutter_read_device_model.dart';
 
